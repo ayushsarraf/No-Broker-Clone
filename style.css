@@ -25,6 +25,60 @@ body {
     top: 0;
     z-index: 1000;
 }
+@media (max-width: 768px) {
+
+  .header .container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  .logo-icon img {
+    width: 140px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .header-actions {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 8px;
+    justify-content: flex-start;
+  }
+
+  .pay-rent-btn,
+  .btn-property,
+  .btn-link {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+    white-space: nowrap;
+  }
+
+  .hamburger {
+    font-size: 20px;
+    align-self: flex-end;
+  }
+}
+@media (max-width: 480px) {
+
+  .logo-icon img {
+    width: 110px;
+  }
+
+  .header-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .pay-rent-btn,
+  .btn-property,
+  .btn-link {
+    width: 100%;
+    text-align: left;
+  }
+}
+
 
 .header .container {
     max-width: 100%;
